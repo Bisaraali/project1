@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,7 +17,20 @@ import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './home/home.component';
 import { ChildrenComponent } from './children/children.component';
 import { VaccinationComponent } from './vaccination/vaccination.component';
-import { DoctorComponent } from './doctor/doctor.component';
+import { DoctorComponent } from './doctor/doctor.component'
+import { FormsModule } from '@angular/forms';
+import { ChildListComponent } from './child-list/child-list.component';
+import { DoctorListComponent } from './doctor-list/doctor-list.component';
+import { VaccinationListComponent } from './vaccination-list/vaccination-list.component';
+import { DataMemberComponent } from './data-member/data-member.component';
+import { UpdateChildrenComponent } from './update-children/update-children.component';
+import { UpdateDoctorComponent } from './update-doctor/update-doctor.component';
+import { UpdateVaccinationComponent } from './update-vaccination/update-vaccination.component';
+import { ViewChildrenComponent } from './view-children/view-children.component';
+import { ViewDoctorComponent } from './view-doctor/view-doctor.component';
+import { ViewVaccinationComponent } from './view-vaccination/view-vaccination.component';
+
+
 
 @NgModule({
   declarations: [
@@ -28,7 +42,20 @@ import { DoctorComponent } from './doctor/doctor.component';
     HomeComponent,
     ChildrenComponent,
     VaccinationComponent,
-    DoctorComponent
+    DoctorComponent,
+    ChildListComponent,
+    DoctorListComponent,
+    VaccinationListComponent,
+    DataMemberComponent,
+    UpdateChildrenComponent,
+    UpdateDoctorComponent,
+    UpdateVaccinationComponent,
+    ViewChildrenComponent,
+    ViewDoctorComponent,
+    ViewVaccinationComponent,
+  
+  
+
   ],
   imports: [
     BrowserModule,
@@ -38,7 +65,9 @@ import { DoctorComponent } from './doctor/doctor.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    HttpClientModule,
+    MatListModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

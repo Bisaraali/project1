@@ -1,1 +1,51 @@
-<p>children works!</p>
+<section class="vh-100 bg-image">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Fill children detail</h2>
+
+              <form (ngSubmit)="onSubmit()">
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg"> fistName</label>
+                  <input type="text" name="name" [(ngModel)]="children.firstName"  class="form-control form-control-lg" />
+                  
+                </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg"> lastName</label>
+                  <input type="text" name="name" [(ngModel)]="children.lastName "class="form-control form-control-lg" />
+                  
+                </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">address</label>
+                  <input type="text"name="name" [(ngModel)]="children.address"  class="form-control form-control-lg" />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">gender</label>
+                  <input type="text" name="name" [(ngModel)]="children.gender"   class="form-control form-control-lg" />
+                </div>  
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">date of birth</label>
+                  <input type="text" name="name" [(ngModel)]="children.dateofbirth" class="form-control form-control-lg" />
+                </div> 
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">height</label>
+                  <input type="text"name="name" [(ngModel)]="children.height" class="form-control form-control-lg" />
+                </div>     
+                <div class="d-flex justify-content-center">
+                  
+                  <button type="submit"  class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" >Submit</button>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,25 @@
+
+<table class="table table-bordered">
+<thead>
+    <tr>
+        <th>FemaleList</th>
+        <th>Male List</th>
+        <th>ChildrenList</th>
+        <th>VaccinationList</th>
+        
+                
+                
+            </tr>
+        </thead>
+        
+        
+        <tr *ngFor="let DataMembers of DataMember">
+            <td>{{DataMember.FemaleList}}</td>
+            <td>{{DataMember.MaleList}}</td>
+            <td>{{DataMember.ChildenList}}</td>
+            <td>{{ DataMember.VaccinationList}}</td>
+            </tr><br><br>
+            <div>
+                <button class="btn-success">Cormfirm</button>
+            </div>
+        </table>

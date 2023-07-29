@@ -1,0 +1,42 @@
+<p class="h1 text-center  text-success" routerLink="/Dashboard/Vaccination" ><button class="btn btn-primary mb-5 mt-2"> Add New Vaccnation</button></p>
+
+<div class="container">
+    <div class="card p-4">
+        <div class="mt-2">
+           
+        </div>
+        <br>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th><table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>VaccinationId</th>
+                                <th>Vaccination name</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                
+                                
+                            </tr>
+                        </thead>
+                    
+                
+        
+        
+            
+            <tbody>
+                <tr *ngFor="let vaccination vaccination">
+                    <td>{{vaccination.id}}</td>
+                    <td>{{vaccination.name}}</td>
+                    <td>{{vaccination.date}}</td>
+                    <td>{{vaccination.status}}</td>
+                    <td>
+                        <button class="btn btn-primary" (click)="OnViewVaccination(vaccination.id)">View</button>
+                        <button class="btn btn-success mx-1"(click)="OnUpdateVaccination(vaccination.id)">Update</button>
+                        <button class="btn btn-warn mx-1"(click)="OnDelete(vaccination.id)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        
+    

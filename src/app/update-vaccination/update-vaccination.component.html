@@ -1,0 +1,26 @@
+<p>update-vaccination works!</p>
+<h1 class="text-center text-success">VACINATIONS LIST</h1>
+<form  (ngSubmit)="onSubmit()">
+<div class="form-outline mb-4">
+    <label class="form-label" for="form3Example1cg"> name</label>
+    
+    <input type="text" name="name" [(ngModel)]="updatevaccination. name"   class="form-control form-control-lg" />
+  </div> 
+  <div class="form-outline mb-4">
+    <label class="form-label" for="form3Example1cg">date</label>
+    <input type="text" name="name" [(ngModel)]="updatevaccination.date"   class="form-control form-control-lg" />
+  </div> 
+  <div class="form-outline mb-4">
+    <label class="form-label" for="form3Example1cg">status</label>
+    <input type="text" name="name" [(ngModel)]="updatevaccination.status"   class="form-control form-control-lg" />
+  </div> 
+  <div class="d-flex justify-content-center">
+                    
+    <button type="submit"  class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" >Submit</button>
+  </div>
+</form>
+
+
+            
+     
+  

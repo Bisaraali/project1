@@ -1,0 +1,45 @@
+
+
+ 
+<div class="container">
+    <div class="card p-1">
+        <div class="mt-2">
+           <div>
+            <a routerLink="/Dashboard/Children"> <button class="btn btn-primary mb-5 mt-2">Add New CHILDREN DETAILS</button></a>
+           </div>
+        </div>
+        <br>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ChildrenId</th>
+                    <th>ChildrenfistName</th>
+                    <th>ChildrenlastName</th>
+                    <th>Address</th>
+                    <th>Gender</th>
+                    <th>Date of date</th>
+                    <th>height</th>
+                    
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let childrens of children">
+                    <td>{{childrens.id}}</td>
+                    <td>{{childrens.firstName}}</td>
+                    <td>{{childrens.lastName}}</td>
+                    <td>{{childrens.address}}</td>
+                    <td>{{ childrens.gender}}</td>
+                    <td>{{ childrens.dateofbirth}}</td>
+                    <td>{{ childrens.height}}</td>
+                    <td>
+                        <button mat-raised-button color="primary" (click)="OnViewcChildren(childrens.id)">View</button>
+                        <button mat-raised-button color="warn" class="mx-1"(click)="deleteChild(childrens.id)">delete</button>
+                        <button mat-raised-button color="success" (click)="OnUpdateChildren(childrens.id)">update</button>  
+                       
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
